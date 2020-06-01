@@ -116,7 +116,8 @@ myraidz1/fs_4  compression  lzjb      local
 
 * 5.2. Вывод результата сжатия в фс. Скачено два файла .txt - "Война и мир", 2600.txt.utf-8. 
 
-** 5.2.1. На каждой ФС wget wget -o log https://raw.githubusercontent.com/NSkelsey/cvf/master/war_and_peace.txt; wget -o log http://www.gutenberg.org/ebooks/2600.txt.utf-8 
+    *5.2.1. На каждой ФС wget wget -o log https://raw.githubusercontent.com/NSkelsey/cvf/master/war_and_peace.txt; wget -o log http://www.gutenberg.org/ebooks/2600.txt.utf-8 
+
 ** 5.2.2. Вывод сжатие разных методов;
 
 ```
