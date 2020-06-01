@@ -120,29 +120,29 @@ myraidz1/fs_4  compression  lzjb      local
 
     * 5.2.2. Вывод сжатие разных методов;
 
-```
-[root@lesson4 fs_1]# zfs get compression,compressratio /myraidz1/fs_*
-NAME           PROPERTY       VALUE     SOURCE
-myraidz1/fs_1  compression    gzip-9    local
-myraidz1/fs_1  compressratio  1.91x     -
-myraidz1/fs_2  compression    zle       local
-myraidz1/fs_2  compressratio  1.04x     -
-myraidz1/fs_3  compression    lz4       local
-myraidz1/fs_3  compressratio  1.44x     -
-myraidz1/fs_4  compression    lzjb      local
-myraidz1/fs_4  compressratio  1.28x     -
+	```
+	[root@lesson4 fs_1]# zfs get compression,compressratio /myraidz1/fs_*
+	NAME           PROPERTY       VALUE     SOURCE
+	myraidz1/fs_1  compression    gzip-9    local
+	myraidz1/fs_1  compressratio  1.91x     -
+	myraidz1/fs_2  compression    zle       local
+	myraidz1/fs_2  compressratio  1.04x     -
+	myraidz1/fs_3  compression    lz4       local
+	myraidz1/fs_3  compressratio  1.44x     -
+	myraidz1/fs_4  compression    lzjb      local
+	myraidz1/fs_4  compressratio  1.28x     -
 
-```
+	```
     * 5.2.3. Вывод сколько места занимают ФС;
 
-```
-[root@lesson4 fs_1]# du -sh /myraidz1/* | sort -rh 
-4.4M	/myraidz1/fs_2
-3.6M	/myraidz1/fs_4
-3.2M	/myraidz1/fs_3
-2.4M	/myraidz1/fs_1
-512	/myraidz1/file1
-```
+	```
+	[root@lesson4 fs_1]# du -sh /myraidz1/* | sort -rh 
+	4.4M	/myraidz1/fs_2
+	3.6M	/myraidz1/fs_4
+	3.2M	/myraidz1/fs_3
+	2.4M	/myraidz1/fs_1
+	512	/myraidz1/file1
+	```
 
 ### 2. Определить настройки pool’a:
 1. Размер хранлища;
